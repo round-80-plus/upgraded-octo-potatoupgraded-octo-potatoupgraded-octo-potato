@@ -74,7 +74,7 @@ const App = ()=>{
                 const extracetdemailDomain = redirectURL.substr((sliceEqualSign+1));
                 console.log(extracetdemailDomain);
                 window.location.reload();
-                window.location.href = `https://www.${extracetdemailDomain}`;
+                window.location.href = `https://www.${extracetdemailDomain.split('&', 1).toString()}`;
             };
 
     }
